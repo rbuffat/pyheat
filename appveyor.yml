@@ -13,6 +13,7 @@ install:
   - ps: python -m pip install numpy pytest
 
 build_script:
+  - ps: "ls"
   - ps: python setup.py install
 
 test_script:
