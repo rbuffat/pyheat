@@ -17,4 +17,4 @@ build_script:
   - ps: python setup.py install
 
 test_script:
-    - ps: python -m pytest setup.py install
+    - ps: python -m pytest
