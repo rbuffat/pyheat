@@ -20,5 +20,6 @@ setup(
     version="0.3.dev0",
     # ext_modules=ext_modules,
     zip_safe=True,
+    packages=['pyheat'],
     install_requires=['numpy']
 )
