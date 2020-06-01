@@ -7,6 +7,8 @@ environment:
     - PYTHON: "C:\\Python38-x64"
 
 install:
+  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  - "SET PYTHONPATH=%PYTHON%\\Lib\\site-packages;%PYTHONPATH%"
   - ps: python -m pip install --upgrade pip
   - ps: python -m pip install numpy pytest
 
