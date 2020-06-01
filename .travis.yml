@@ -1,0 +1,14 @@
+language: python
+
+dist: xenial
+
+before_install:
+  - python -m pip install -U pip
+  - python -m pip install numpy cython pytest
+
+
+install:
+  - python -m pip install --no-deps --force-reinstall --no-use-pep517 -e .
+
+script:
+  - python -m pytest
