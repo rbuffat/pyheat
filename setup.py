@@ -1,4 +1,7 @@
-from distutils.core import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 from distutils.extension import Extension
 
 try:
@@ -19,5 +22,5 @@ setup(
     name='pyheat',
     version="0.3.dev",
     ext_modules=ext_modules,
-    install_requires=['numpy', 'setuptools']
+    install_requires=['numpy']
 )
